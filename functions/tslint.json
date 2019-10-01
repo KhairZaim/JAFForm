@@ -20,7 +20,7 @@
 
     // Do not allow type assertions that do nothing. This is a big warning that the developer may not understand the
     // code currently being edited (they may be incorrectly handling a different type case that does not exist).
-    "no-unnecessary-type-assertion": true,
+    "no-unnecessary-type-assertion": false,
 
     // Disallow nonsensical label usage.
     "label-position": true,
@@ -54,7 +54,9 @@
 
     // Do not allow any imports for modules that are not in package.json. These will almost certainly fail when
     // deployed.
-    "no-implicit-dependencies": true,
+    // "no-implicit-dependencies": true,
+    "no-implicit-dependencies": false,
+    
 
     // The 'this' keyword can only be used inside of classes.
     "no-invalid-this": true,
@@ -109,6 +111,8 @@
 
     // Multi-line object literals and function calls should have a trailing comma. This helps avoid merge conflicts.
     "trailing-comma": {"severity": "warning"}
+
+    
   },
 
   "defaultSeverity": "error"
